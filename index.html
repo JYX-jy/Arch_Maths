@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch Maths</title>
+    <style>
+        body {
+            margin: 0;
+      
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(20deg, #ff85b2, #bf2bfa);
+            padding: 5px;
+            z-index: 1000; /* 确保导航栏在其他内容之上 */
+        }
+        .navbar .title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+		padding: 0px 10px;
+        }
+        .navbar .links {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar .links a {
+            color: white;
+            text-decoration: none;
+            padding: 30px 30px;
+        }
+        .navbar .links a:hover {
+            background-color: rgba(220,220,220,0.6);
+        }
+        /* 为页面内容添加上边距，以避免与固定导航栏重叠 */
+        .content {
+            margin-top: 80px; /* 根据导航栏的高度调整 */
+		padding: 20px;
+        }
+	.pictext {
+        display: flex; /* 使用Flexbox布局 */
+        align-items: center; /* 垂直居中 */
+        gap: 60px; /* 设置元素之间的间隔 */
+        padding: 30px;
+        }
+ 
+    img {
+        width: 360px; /* 设置图片宽度 */
+        height: auto; /* 高度自动调整以保持图片比例 */
+    }
+	    
+	.image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container img {
+            display: block;
+        }
+
+        .image-container .text-overlay {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            
+	}
+	    footer {
+            background-color: #333333; /* 深灰色背景 */
+            color: white; /* 文本颜色为白色 */
+            padding: 20px; /* 内边距 */
+            text-align: center; /* 文本居中对齐 */
+	    }
+	    iframe {
+    width: 100%;
+    height: 100%;
+	  }
+	  .sgc {
+		  width: 85%;
+		  aspect-ratio: 4/3;
+		  margin: 0;
+		  padding: 0;
+	  }
+    </style>
+ <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">
+		<p class="math">SQY Graphic Calculator</p>
+	</div>
+        <div class="links">
+            <a href="https://baidu.com">首页</a>
+            <a href="/sgc/help.html">帮助</a>
+            <a href="/sgc/o.html">在线版</a>
+	    <a href="https://baidu.com">关于</a>
+        </div>
+    </div>
+    <div class="content">
+
+<center>
+    <h2 class="math">
+        Arch图形计算器预览版
+    </h2>
+</center>
+<center>
+	<div class="sgc">
+  <iframe
+  id="SGC"
+  src="/ArchHTML/index.html">
+  </iframe>
+	</div>
+</center>
+  <p class="math">Arch图形计算器. </p>
+  <p class="math">Arch支持的数学运算：</p>
+  <p class="math">三角函数：sin,cos,tan,csc,sec,cot,asin,acos,atan,acsc,asec,acot,sinh,cosh,tanh,csch,sech,coth,asinh,acosh,atanh,acsch,asech,acoth</p>
+  <p class="math">特殊函数：gamma,zeta,psi,Si,Ci,Ei,li,Shi,Chi,FresnelS,FresnelC,LambertW,eint,kint,erf</p>
+    <p class="math">数学函数：floor,ceil,round,min,max,sgn</p>
+	  <p class="math">指对：ln,log,exp</p>
+	  <p class="math">Arch专用：xr(x定义域),yr(y定义域),xmin,xmax,ymin,ymax,max,min,normal,root,chisquared,gammadistribution,lognormal,tdistribution</p>
+    <center>
+       <h2 class="math">使用说明</h2>
+</center>
+    <p class="math">Arch图形计算器能够自动判断您输入的数学对象类别。Arch支持以x和y为变量的显函数，以xy,xz或yz为自变量的三维显函数，二维和三维隐函数，参数方程，极坐标函数，文本，以及点列。您可在设置中调节函数绘制精度，精度越高绘制越清晰，但也会减慢速度。我们推荐的精度为：二维显函数1440，二维隐函数120，三维显函数30，三维隐函数14。</p>
+<p class="math">Arch图形计算器拥有几何和统计功能，您可在左侧菜单栏底部或屏幕右上的快捷按钮切换模式。</p>
+  <p class="math">对于Desmos，Geogebra和SGC用户，甚至是小白，熟练使用Arch绝不是问题。点击侧栏的“输入”栏目或底部的“输入表达式”按钮即可输入解析式或文本。如果您使用的是移动设备，也可以在“设置”中将“设备适配”选项调节为“平板”，使用Arch的屏幕键盘输入。</p>
+     
+  
+       </div>
+    </div>
+	<footer>
+		<p class="math">&copy; © Alpha Software 2025. Jin Authur all rights reserved. 2025.1.29</p>
+	</footer>
+</body>
+</html>
